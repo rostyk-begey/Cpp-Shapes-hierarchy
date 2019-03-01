@@ -8,19 +8,19 @@ namespace Abstract
 		double height;
 		FlatShape *base;
 	public:
-		~VolShape()
+		virtual ~VolShape()
 		{
 			delete this->base;
 		};
 
-		virtual double getVol()
-		{
-			return this->getBootomArea() * this->height;
-		};
-
-		virtual double getBootomArea()
+		virtual double getBottomArea() const
 		{
 			return this->base->getArea();
+		};
+
+		virtual double getBottomPerimeter() const
+		{
+			return this->base->getPerimeter();
 		};
 	};
 }

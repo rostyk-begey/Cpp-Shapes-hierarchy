@@ -5,6 +5,6 @@ namespace Abstract
 		public Shape
 	{
 	public:
-		~FlatShape() {};
+		virtual double getPerimeter() const = 0;
 	};
 }

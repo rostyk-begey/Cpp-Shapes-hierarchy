@@ -1,10 +1,10 @@
 #pragma once
-#include "abstract.h"
+#include "../../../Abstract/abstract.h"
 using namespace Abstract;
 namespace Basis
 {
 	class Pyramid :
-		public VolShape
+		public ConicalVolShape
 	{
 	public:
 		Pyramid(Triangle t, double h = 1.0)
@@ -17,24 +17,18 @@ namespace Basis
 			this->base = new Rect(r);
 			this->height = h;
 		};
-		~Pyramid() {};
 
-		double getArea()
+		double getArea() const
 		{
 			return 0.0;
 		}
 
-		double getVol()
-		{
-			return 9999;
-		}
-
-		void printOut()
+		void printOut() const
 		{
 			cout << "Pyramid" << endl;
 			cout << "Vol: " << this->getVol() << endl;
 			cout << "Area: " << this->getArea() << endl;
-			cout << "Bottom area: " << this->getBootomArea() << endl << endl;
+			cout << "Bottom area: " << this->getBottomArea() << endl << endl;
 		}
 	};
 }

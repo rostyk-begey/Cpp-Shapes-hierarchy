@@ -5,8 +5,8 @@ namespace Abstract
 	{
 	public:
 		virtual ~Shape() {};
-		virtual double getArea() = 0;
-		virtual void printOut() = 0;
+		virtual double getArea() const = 0;
+		virtual void printOut() const = 0;
 	};
 }
 

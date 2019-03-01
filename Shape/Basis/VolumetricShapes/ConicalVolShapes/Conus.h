@@ -1,10 +1,10 @@
 #pragma once
-#include "abstract.h"
+#include "../../../Abstract/abstract.h"
 using namespace Abstract;
 namespace Basis
 {
 	class Conus :
-		public VolShape
+		public ConicalVolShape
 	{
 	public:
 		Conus(Circle t, double h = 1.0)
@@ -12,24 +12,18 @@ namespace Basis
 			this->base = new Circle(t);
 			this->height = h;
 		};
-		~Conus() {};
 
-		double getArea()
+		double getArea() const
 		{
 			return 0.0;
 		}
 
-		double getVol()
-		{
-			return 9999;
-		}
-
-		void printOut()
+		void printOut() const
 		{
 			cout << "Conus" << endl;
 			cout << "Vol: " << this->getVol() << endl;
 			cout << "Area: " << this->getArea() << endl;
-			cout << "Bottom area: " << this->getBootomArea() << endl << endl;
+			cout << "Bottom area: " << this->getBottomArea() << endl << endl;
 		}
 	};
 }

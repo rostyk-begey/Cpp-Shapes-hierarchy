@@ -1,11 +1,9 @@
 #pragma once
-#include "abstract.h";
+#include "../../Abstract/abstract.h";
 using namespace Abstract;
 namespace Basis
 {
 	class Rect :
-		//public Pyramidable,
-		//public Prismable
 		public FlatShape
 	{
 	protected:
@@ -18,17 +16,21 @@ namespace Basis
 			this->x = R.x;
 			this->y = R.y;
 		};
-		~Rect() {};
 
-		void printOut()
+		double getArea() const
+		{
+			return this->x * this->y;
+		}
+
+		double getPerimeter() const
+		{
+			return 2 * (this->x + this->y);
+		}
+
+		void printOut() const
 		{
 			cout << "Rect" << endl;
 			cout << "Area: " << this->getArea() << endl << endl;
-		}
-
-		double getArea()
-		{
-			return 0.0;
 		}
 	};
 }

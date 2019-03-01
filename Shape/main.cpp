@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-#include "abstract.h";
+#include "./Abstract/abstract.h";
 
-#include "basis.h";
+#include "./Basis/basis.h";
 
 using namespace Abstract;
 

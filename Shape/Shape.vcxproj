@@ -146,25 +146,21 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="abstract.h" />
-    <ClInclude Include="basis.h" />
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="Conical.h" />
-    <ClInclude Include="Conus.h" />
-    <ClInclude Include="Cylinder.h" />
-    <ClInclude Include="Cylindrical.h" />
-    <ClInclude Include="FlatShape.h" />
-    <ClInclude Include="Parallelepiped.h" />
-    <ClInclude Include="Parallelepipedable.h" />
-    <ClInclude Include="Prism.h" />
-    <ClInclude Include="Pyramidable.h" />
-    <ClInclude Include="Prismable.h" />
-    <ClInclude Include="Pyramid.h" />
-    <ClInclude Include="Rect.h" />
-    <ClInclude Include="Shape.h" />
-    <ClInclude Include="Square.h" />
-    <ClInclude Include="Triangle.h" />
-    <ClInclude Include="VolShape.h" />
+    <ClInclude Include="Abstract\abstract.h" />
+    <ClInclude Include="Abstract\Shape\FlatShape\FlatShape.h" />
+    <ClInclude Include="Abstract\Shape\Shape.h" />
+    <ClInclude Include="Abstract\Shape\VolumetricShape\ConicalVolShape\ConicalVolShape.h" />
+    <ClInclude Include="Abstract\Shape\VolumetricShape\DirectVolShape\DirectVolShape.h" />
+    <ClInclude Include="Abstract\Shape\VolumetricShape\VolShape.h" />
+    <ClInclude Include="Basis\basis.h" />
+    <ClInclude Include="Basis\FlatShapes\Circle.h" />
+    <ClInclude Include="Basis\FlatShapes\Rect.h" />
+    <ClInclude Include="Basis\FlatShapes\Triangle.h" />
+    <ClInclude Include="Basis\VolumetricShapes\ConicalVolShapes\Conus.h" />
+    <ClInclude Include="Basis\VolumetricShapes\ConicalVolShapes\Pyramid.h" />
+    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Cylinder.h" />
+    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Parallelepiped.h" />
+    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Prism.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
