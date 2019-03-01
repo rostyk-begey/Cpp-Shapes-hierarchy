@@ -1,22 +1,34 @@
 #pragma once
-#include "Piramidable.h"
-#include "Prismable.h"
-class Square :
-	public Piramidable,
-	public Prismable
+#include "abstract.h"
+using namespace Abstract;
+namespace Basis
 {
-public:
-	Square();
-	~Square();
-};
+	class Square :
+		//public Pyramidable,
+		//public Prismable
+		public FlatShape
+	{
+	protected:
+		double x;
+		double y;
+	public:
+		Square(double a, double b) : x(a), y(b) {};
+		Square(const Square & S)
+		{
+			this->x = S.x;
+			this->y = S.y;
+		};
+		~Square() {};
 
+		void printOut()
+		{
+			cout << "Square" << endl;
+			cout << "Area: " << this->getArea() << endl << endl;
+		}
 
-
-Square::Square()
-{
-}
-
-
-Square::~Square()
-{
+		double getArea()
+		{
+			return 0.0;
+		}
+	};
 }

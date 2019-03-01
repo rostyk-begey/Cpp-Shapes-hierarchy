@@ -3,12 +3,10 @@ namespace Abstract
 {
 	class Shape
 	{
-	private:
-		Shape();
-		~Shape();
 	public:
-		virtual void printArea() = 0;
-		virtual void printAsciiImg() = 0;
+		virtual ~Shape() {};
+		virtual double getArea() = 0;
+		virtual void printOut() = 0;
 	};
 }
 

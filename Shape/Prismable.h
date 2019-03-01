@@ -1,5 +1,4 @@
 #pragma once
-#include "../Shape/headers.h";
 namespace Abstract
 {
 	class Prismable :

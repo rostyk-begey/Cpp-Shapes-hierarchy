@@ -1,25 +1,40 @@
 #pragma once
-#include "VolumetricShape.h"
-#include "Triangle.h"
-class Pyramid :
-	public VolumetricShape
+#include "abstract.h"
+using namespace Abstract;
+namespace Basis
 {
-private:
-	Triangle base;
-	double height;
-public:
-	Pyramid(double a = 1.0) : base(a), height(a) {};
-	Pyramid(double a, double h) : base(a), height(h) {};
-	Pyramid(Triangle t, double h = 1.0) : base(t), height(h) {};
-	~Pyramid();
-
-	void printAsciiImg()
+	class Pyramid :
+		public VolShape
 	{
-		cout << "Piramid" << endl;
-	}
-};
+	public:
+		Pyramid(Triangle t, double h = 1.0)
+		{
+			this->base = new Triangle(t);
+			this->height = h;
+		};
+		Pyramid(Rect r, double h = 1.0)
+		{
+			this->base = new Rect(r);
+			this->height = h;
+		};
+		~Pyramid() {};
 
+		double getArea()
+		{
+			return 0.0;
+		}
 
-Pyramid::~Pyramid()
-{
+		double getVol()
+		{
+			return 9999;
+		}
+
+		void printOut()
+		{
+			cout << "Pyramid" << endl;
+			cout << "Vol: " << this->getVol() << endl;
+			cout << "Area: " << this->getArea() << endl;
+			cout << "Bottom area: " << this->getBootomArea() << endl << endl;
+		}
+	};
 }

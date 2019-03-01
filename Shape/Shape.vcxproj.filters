@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Header Files\Abstract">
       <UniqueIdentifier>{c39d0a0f-de61-478d-b559-36e00344ffad}</UniqueIdentifier>
     </Filter>
@@ -34,7 +30,7 @@
     <Filter Include="Header Files\Basis\Volumetric">
       <UniqueIdentifier>{0f61d94b-583d-44f4-89d7-d3cf8905045a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Abstract\Shape\Flat\Volumetrical classes">
+    <Filter Include="Header Files\Abstract\Shape\Flat\Volumetrical base">
       <UniqueIdentifier>{e907f097-39af-4030-9596-8105512530e5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -42,14 +38,8 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Conical.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="VolumetricShape.h">
-      <Filter>Header Files\Abstract\Shape\Volumetric</Filter>
-    </ClInclude>
     <ClInclude Include="FlatShape.h">
       <Filter>Header Files\Abstract\Shape\Flat</Filter>
     </ClInclude>
@@ -63,22 +53,49 @@
       <Filter>Header Files\Basis\Flat</Filter>
     </ClInclude>
     <ClInclude Include="Conical.h">
-      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Piramidable.h">
-      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical classes</Filter>
+      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical base</Filter>
     </ClInclude>
     <ClInclude Include="Prismable.h">
-      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical classes</Filter>
+      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical base</Filter>
     </ClInclude>
     <ClInclude Include="Pyramid.h">
       <Filter>Header Files\Basis\Volumetric</Filter>
     </ClInclude>
-    <ClInclude Include="headers.h">
-      <Filter>Header Files\Abstract</Filter>
-    </ClInclude>
     <ClInclude Include="Circle.h">
       <Filter>Header Files\Basis\Flat</Filter>
+    </ClInclude>
+    <ClInclude Include="abstract.h">
+      <Filter>Header Files\Abstract</Filter>
+    </ClInclude>
+    <ClInclude Include="basis.h">
+      <Filter>Header Files\Basis</Filter>
+    </ClInclude>
+    <ClInclude Include="Rect.h">
+      <Filter>Header Files\Basis\Flat</Filter>
+    </ClInclude>
+    <ClInclude Include="Pyramidable.h">
+      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical base</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylinder.h">
+      <Filter>Header Files\Basis\Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Conus.h">
+      <Filter>Header Files\Basis\Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylindrical.h">
+      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical base</Filter>
+    </ClInclude>
+    <ClInclude Include="Prism.h">
+      <Filter>Header Files\Basis\Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="Parallelepipedable.h">
+      <Filter>Header Files\Abstract\Shape\Flat\Volumetrical base</Filter>
+    </ClInclude>
+    <ClInclude Include="Parallelepiped.h">
+      <Filter>Header Files\Basis\Volumetric</Filter>
+    </ClInclude>
+    <ClInclude Include="VolShape.h">
+      <Filter>Header Files\Abstract\Shape\Volumetric</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

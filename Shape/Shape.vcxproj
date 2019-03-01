@@ -143,21 +143,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Conical.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers.h" />
+    <ClInclude Include="abstract.h" />
+    <ClInclude Include="basis.h" />
     <ClInclude Include="Circle.h" />
     <ClInclude Include="Conical.h" />
+    <ClInclude Include="Conus.h" />
+    <ClInclude Include="Cylinder.h" />
+    <ClInclude Include="Cylindrical.h" />
     <ClInclude Include="FlatShape.h" />
-    <ClInclude Include="Piramidable.h" />
+    <ClInclude Include="Parallelepiped.h" />
+    <ClInclude Include="Parallelepipedable.h" />
+    <ClInclude Include="Prism.h" />
+    <ClInclude Include="Pyramidable.h" />
     <ClInclude Include="Prismable.h" />
     <ClInclude Include="Pyramid.h" />
+    <ClInclude Include="Rect.h" />
     <ClInclude Include="Shape.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="Triangle.h" />
-    <ClInclude Include="VolumetricShape.h" />
+    <ClInclude Include="VolShape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

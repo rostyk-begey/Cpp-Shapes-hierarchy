@@ -1,18 +1,32 @@
 #pragma once
-#include <iostream>
-#include "Shape.h"
-using namespace std;
-class Triangle:
-	public Shape
+#include "abstract.h"
+using namespace Abstract;
+namespace Basis
 {
-private:
-	double side;
-public:
-	Triangle(double a = 1.0): side(a) {};
-	~Triangle();
-
-	void printAsciiImg()
+	class Triangle :
+		//public Pyramidable,
+		//public Prismable
+		public FlatShape
 	{
-		cout << "Triangle" << endl;
-	}
-};
+	protected:
+		double side;
+	public:
+		Triangle(double a = 1.0) : side(a) {};
+		Triangle(const Triangle & T) 
+		{
+			this->side = T.side;
+		}
+		~Triangle() {};
+
+		void printOut()
+		{
+			cout << "Triangle" << endl;
+			cout << "Area: " << this->getArea() << endl << endl;
+		}
+
+		double getArea()
+		{
+			return 0.0;
+		}
+	};
+}
