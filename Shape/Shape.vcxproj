@@ -153,14 +153,14 @@
     <ClInclude Include="Abstract\Shape\VolumetricShape\DirectVolShape\DirectVolShape.h" />
     <ClInclude Include="Abstract\Shape\VolumetricShape\VolShape.h" />
     <ClInclude Include="Basis\basis.h" />
-    <ClInclude Include="Basis\FlatShapes\Circle.h" />
-    <ClInclude Include="Basis\FlatShapes\Rect.h" />
-    <ClInclude Include="Basis\FlatShapes\Triangle.h" />
-    <ClInclude Include="Basis\VolumetricShapes\ConicalVolShapes\Conus.h" />
-    <ClInclude Include="Basis\VolumetricShapes\ConicalVolShapes\Pyramid.h" />
-    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Cylinder.h" />
-    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Parallelepiped.h" />
-    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Prism.h" />
+    <ClInclude Include="Basis\Shapes\FlatShapes\Circle.h" />
+    <ClInclude Include="Basis\Shapes\FlatShapes\Rect.h" />
+    <ClInclude Include="Basis\Shapes\FlatShapes\Triangle.h" />
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\ConicalVolShapes\Conus.h" />
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\ConicalVolShapes\Pyramid.h" />
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\DirectVolShapes\Cylinder.h" />
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\DirectVolShapes\Parallelepiped.h" />
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\DirectVolShapes\Prism.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,9 +20,9 @@ int main()
 	Parallelepiped par(rect, 3.4);
 	Prism prism(triangle, 4.2);
 	Pyramid pir1(rect, 8.1);
-	Pyramid pir2(triangle, 5.3);
+	//Pyramid pir2(triangle, 5.3);
 
-	Shape *arr[9] = {
+	Shape *arr[8] = {
 		new Circle(5.0),
 		new Rect(2.0, 3.0),
 		new Triangle(2.5),
@@ -31,7 +31,7 @@ int main()
 		new Parallelepiped(rect, 3.4),
 		new Prism(triangle, 4.2),
 		new Pyramid(rect, 8.1),
-		new Pyramid(triangle, 5.3)
+		//new Pyramid(triangle, 5.3)
 	};
 
 	for (Shape *shape : arr)

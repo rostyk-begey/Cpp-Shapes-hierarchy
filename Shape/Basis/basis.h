@@ -1,11 +1,10 @@
 #pragma once
 using namespace std;
-#include "./FlatShapes/Circle.h";
-#include "./FlatShapes/Rect.h";
-#include "./FlatShapes/Triangle.h";
-
-#include "./VolumetricShapes/ConicalVolShapes/Pyramid.h";
-#include "./VolumetricShapes/ConicalVolShapes/Conus.h";
-#include "./VolumetricShapes/DirectVolShapes/Cylinder.h";
-#include "./VolumetricShapes/DirectVolShapes/Parallelepiped.h";
-#include "./VolumetricShapes/DirectVolShapes/Prism.h";
+#include "./Shapes/FlatShapes/Circle.h";
+#include "./Shapes/FlatShapes/Rect.h";
+#include "./Shapes/FlatShapes/Triangle.h";
+#include "./Shapes/VolumetricShapes/ConicalVolShapes/Pyramid.h";
+#include "./Shapes/VolumetricShapes/ConicalVolShapes/Conus.h";
+#include "./Shapes/VolumetricShapes/DirectVolShapes/Cylinder.h";
+#include "./Shapes/VolumetricShapes/DirectVolShapes/Parallelepiped.h";
+#include "./Shapes/VolumetricShapes/DirectVolShapes/Prism.h";

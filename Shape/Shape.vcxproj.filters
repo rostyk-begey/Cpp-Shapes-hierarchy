@@ -30,16 +30,19 @@
     <Filter Include="Header Files\Abstract\Shape\VolumetricShape\ConicalVolShape">
       <UniqueIdentifier>{0ad3fb04-bdad-42e2-ad6f-e5383407a950}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Basis\VolumetricShapes">
-      <UniqueIdentifier>{0f61d94b-583d-44f4-89d7-d3cf8905045a}</UniqueIdentifier>
+    <Filter Include="Header Files\Basis\Shapes">
+      <UniqueIdentifier>{86e45e7f-2327-4571-8acb-944b8c863aab}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Basis\VolumetricShapes\ConicalVolShapes">
-      <UniqueIdentifier>{75372082-3186-482d-a9f7-060c518e31ec}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Basis\FlatShapes">
+    <Filter Include="Header Files\Basis\Shapes\FlatShapes">
       <UniqueIdentifier>{9f8ca32d-9b16-4a81-b124-123b317c03e1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Basis\VolumetricShapes\DirectVolShapes">
+    <Filter Include="Header Files\Basis\Shapes\VolumetricShapes">
+      <UniqueIdentifier>{0f61d94b-583d-44f4-89d7-d3cf8905045a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Basis\Shapes\VolumetricShapes\ConicalVolShapes">
+      <UniqueIdentifier>{75372082-3186-482d-a9f7-060c518e31ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Basis\Shapes\VolumetricShapes\DirectVolShapes">
       <UniqueIdentifier>{75b5f655-d26d-4c10-b638-280ce66d8c82}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -64,35 +67,35 @@
     <ClInclude Include="Abstract\abstract.h">
       <Filter>Header Files\Abstract</Filter>
     </ClInclude>
-    <ClInclude Include="Basis\FlatShapes\Circle.h">
-      <Filter>Header Files\Basis\FlatShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\FlatShapes\Rect.h">
-      <Filter>Header Files\Basis\FlatShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\FlatShapes\Triangle.h">
-      <Filter>Header Files\Basis\FlatShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\VolumetricShapes\ConicalVolShapes\Conus.h">
-      <Filter>Header Files\Basis\VolumetricShapes\ConicalVolShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\VolumetricShapes\ConicalVolShapes\Pyramid.h">
-      <Filter>Header Files\Basis\VolumetricShapes\ConicalVolShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Cylinder.h">
-      <Filter>Header Files\Basis\VolumetricShapes\DirectVolShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Parallelepiped.h">
-      <Filter>Header Files\Basis\VolumetricShapes\DirectVolShapes</Filter>
-    </ClInclude>
-    <ClInclude Include="Basis\VolumetricShapes\DirectVolShapes\Prism.h">
-      <Filter>Header Files\Basis\VolumetricShapes\DirectVolShapes</Filter>
-    </ClInclude>
     <ClInclude Include="Abstract\Shape\VolumetricShape\ConicalVolShape\ConicalVolShape.h">
       <Filter>Header Files\Abstract\Shape\VolumetricShape\ConicalVolShape</Filter>
     </ClInclude>
     <ClInclude Include="Abstract\Shape\VolumetricShape\DirectVolShape\DirectVolShape.h">
       <Filter>Header Files\Abstract\Shape\VolumetricShape\DirectVolShape</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\FlatShapes\Circle.h">
+      <Filter>Header Files\Basis\Shapes\FlatShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\FlatShapes\Rect.h">
+      <Filter>Header Files\Basis\Shapes\FlatShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\FlatShapes\Triangle.h">
+      <Filter>Header Files\Basis\Shapes\FlatShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\ConicalVolShapes\Conus.h">
+      <Filter>Header Files\Basis\Shapes\VolumetricShapes\ConicalVolShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\ConicalVolShapes\Pyramid.h">
+      <Filter>Header Files\Basis\Shapes\VolumetricShapes\ConicalVolShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\DirectVolShapes\Cylinder.h">
+      <Filter>Header Files\Basis\Shapes\VolumetricShapes\DirectVolShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\DirectVolShapes\Parallelepiped.h">
+      <Filter>Header Files\Basis\Shapes\VolumetricShapes\DirectVolShapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Basis\Shapes\VolumetricShapes\DirectVolShapes\Prism.h">
+      <Filter>Header Files\Basis\Shapes\VolumetricShapes\DirectVolShapes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
