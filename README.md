@@ -1,7 +1,7 @@
 # Cpp-Shapes-hierarchy
 The main aim of this project is to help you to understand two basic OOP principes:
 
-* Aolymorphysm
+* Polymorphysm
 > the provision of a **single interface** to entities of different types or the use of a single symbol to represent multiple different types
 * Abstraction
 > * the process of removing physical, spatial, or **temporal** details or attributes in the study of objects or systems in order to more closely attend to other details of interest; it is also very similar in nature to the process of generalization;
